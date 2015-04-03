@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:layout_marginBottom="0dp"
+    android:background="#ff0000"
+    android:orientation="horizontal" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+    <Button
+        android:id="@+id/updateAddressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="成都 "
+        android:textColor="#ffffff"
+        android:textSize="18sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/sousuo"
+        android:paddingTop="5dp" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/info"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/searchButton"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp" >
+    </Button>
+</RelativeLayout>
+</LinearLayout>

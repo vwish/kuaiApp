@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ff0000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/leftv"
+            android:paddingBottom="0dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:text=" 首页 "
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="促销活动"
+                android:textColor="#fff"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/cuxiao" />
+
+</LinearLayout>

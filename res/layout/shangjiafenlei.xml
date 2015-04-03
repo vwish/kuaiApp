@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="75dp"
+        android:background="#50000000"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RadioGroup
+            android:id="@+id/allshangjia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:orientation="vertical">"
+
+			<ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#5000" />
+            <RadioButton
+                android:id="@+id/tiandianxiaochi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listdialogbg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="甜点小吃"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#5000" />
+
+             <RadioButton
+                android:id="@+id/zhongshikuaican"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listdialogbg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="中式快餐"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#5000" />
+
+            <RadioButton
+                android:id="@+id/xiaochaogaifan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listdialogbg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="小炒盖饭"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#5000" />
+             <RadioButton
+                android:id="@+id/huoguoshaokao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listdialogbg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="火锅烧烤"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#5000" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

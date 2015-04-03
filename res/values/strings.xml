@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">kuai</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 弹出对话框 -->
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- Buttons style -->
+    <style name="MMTabButton">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <string name="title_activity_shi_shang">ShiShangActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_cao_cao">CaoCaoActivity</string>
+    <string name="title_activity_jia_xiang">JiaXiangActivity</string>
+    <string name="title_activity_zhen_gong_fu">ZhenGongFuActivity</string>
+    <string name="title_activity_mei_shi_jia">MeiShiJiaActivity</string>
+
+</resources>

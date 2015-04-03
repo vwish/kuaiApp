@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ff0000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/leftv"
+            android:paddingBottom="0dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:text=" 首页 "
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部菜品"
+                android:textColor="#fff"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="0dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <RadioGroup
+            android:id="@+id/allcaiping"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/allshangjia"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/allcaipingbg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="所有商家"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#fff" />
+
+            <RadioButton
+                android:id="@+id/caipingfenlei"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/allcaipingbg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="菜品分类"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#fff" />
+
+            <RadioButton
+                android:id="@+id/zhinengpaixu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/allcaipingbg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="智能排序"
+                android:textColor="@android:color/black"
+                android:textSize="17.0sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="#EBEBEB"
+        android:padding="0dp" />
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+</LinearLayout>

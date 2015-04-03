@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff0000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="快便当"
+        android:textSize="40sp" 
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="我们崇尚自由，我们青春洋溢"
+        android:textSize="20sp" 
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <com.example.view.LoadingView
+        android:id="@+id/main_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/a" >
+    </com.example.view.LoadingView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:text="启动中..."
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

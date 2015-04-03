@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="0dp"
+            android:background="#ff0000"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/leftv"
+                android:paddingBottom="0dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:text=" 首页 "
+                android:textColor="#ffffff"
+                android:textSize="20sp" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单状态"
+                    android:textColor="#fff"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xiayigedingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="下一个订单"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <!-- 菜品图片 -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dip" >
+        <ImageView
+            android:id="@+id/dish_pic"
+            android:layout_width="120dp"
+            android:layout_height="90dp" />
+    </LinearLayout>
+
+    <!-- 菜品名称 -->
+
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:textSize="20sp" />
+
+    <!-- 餐馆名称 -->
+
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#343434"
+        android:textSize="15sp" />
+    <!-- 菜品价格 -->
+
+    <TextView
+        android:id="@+id/dish_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/business_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#f00"
+        android:textSize="25sp" />
+
+    <!-- 显示右边箭头 -->
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dip"
+        android:src="@drawable/arrow" />
+    <!-- 显示好评率 -->
+
+    <TextView
+        android:id="@+id/haoping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/arrow"
+        android:layout_marginRight="5dip"
+        android:textColor="#f00"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+    <!-- 显示好评率 -->
+
+    <TextView
+        android:id="@+id/haopinga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow"
+        android:layout_toLeftOf="@id/haoping"
+        android:text="好评率"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+    <!-- 显示已售份数 -->
+
+    <TextView
+        android:id="@+id/dish_hasnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/haoping"
+        android:layout_marginRight="5dip"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

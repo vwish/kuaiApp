@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B5B5B5" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/main_tab_siteshow"
+                    style="@style/MMTabButton"
+                    android:checked="true"
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_0" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_dinnerCart"
+                    style="@style/MMTabButton"
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_1" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_profile"
+                    style="@style/MMTabButton"
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_2" />
+
+                <RadioButton
+                    android:id="@+id/main_tab_settings"
+                    style="@style/MMTabButton"
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_3" />
+            </RadioGroup>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

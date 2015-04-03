@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="0dp"
+            android:background="#ff0000"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/leftv"
+                android:paddingBottom="0dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:text=" 首页 "
+                android:textColor="#ffffff"
+                android:textSize="20sp" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="想吃什么"
+                    android:textColor="#fff"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dip"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入想吃的菜名"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="20dip" />
+
+            <EditText
+                android:id="@+id/jiage"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dip"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输您希望的价格"
+                android:numeric="integer"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="20dip" />
+
+            <EditText
+                android:id="@+id/fenshu"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dip"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输份数"
+                android:numeric="integer"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA"
+                android:textSize="20dip" />
+
+            <EditText
+                android:id="@+id/fujiaqingqiu"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_margin="5dip"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输您的附加要求..."
+                android:padding="5dip"
+                android:singleLine="false"
+                android:textColorHint="#AAAAAA"
+                android:inputType="textMultiLine"
+				android:gravity="left|top"
+                android:textSize="20dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="价格不能低于10元\n温馨提示：价格越高越能快速送到"
+                android:textColor="#000"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+     <TextView
+            android:id="@+id/fabu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#008B45"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="发布"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+</RelativeLayout>

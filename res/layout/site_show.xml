@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/header" />
+
+    <com.image.indicator.control.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_news_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_images_slide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_image_slide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="vertical" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/image_slide_page"
+                        android:layout_width="fill_parent"
+                        android:layout_height="110dip"
+                        android:focusable="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_title_text"
+                        style="@style/Transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/layout_circle_images"
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/body"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/dishMenuButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:drawableTop="@drawable/caiping"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="菜品"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" >
+                                </Button>
+
+                                <Button
+                                    android:id="@+id/businessButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:drawableTop="@drawable/shangjia"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="商家"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" >
+                                </Button>
+
+                                <Button
+                                    android:id="@+id/salesButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:drawableTop="@drawable/cu"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="促销"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" >
+                                </Button>
+
+                                <Button
+                                    android:id="@+id/userButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:drawableTop="@drawable/yonghu"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:paddingTop="5dp"
+                                    android:text="用户"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" >
+                                </Button>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tuijie"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#EDEDED"
+                                android:text="   为您推荐"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                            <!-- 该处为ListView -->
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="#969696" />
+
+                            <com.example.listviewimage.NoScrollListView
+                                android:id="@+id/list"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="#b5b5b5"
+                                android:dividerHeight="1dp"/>
+                           <!--  android:listSelector="@drawable/list_selector" -->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.image.indicator.control.ScrollViewExtend>
+
+</LinearLayout>
